@@ -1,4 +1,5 @@
 # Setting Client configuration file (w/ Puppet)
+include stdlib
 
 file_line { 'Turn off passowrd auth':
   ensure  => present,
