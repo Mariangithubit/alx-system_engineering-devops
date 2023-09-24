@@ -11,6 +11,6 @@ file_line { 'Turn off passowrd auth':
 file_line { 'True identify file':
   ensure  => present,
   path    => '/etc/ssh/ssh_config',
-  line    => '    IdentifyAuthentication ~/.ssh/school',
+  line    => '    IdentifyFile ~/.ssh/school',
   replace => true,
 }
