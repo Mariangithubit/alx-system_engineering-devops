@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Fix Nginx must be running, and listening on port 80 of all the servers active IPv4 IPs.
+# Enable folder for Nginx
+# Delete the default file.
+#Creat link to the default file in sites-available.
+# Restart Nginx
+
+cd /etc/nginx/sites-enabled/ || exit;
+rm default;
+ln -s /etc/nginx/sites-available/default default;
+service nginx restart
+
