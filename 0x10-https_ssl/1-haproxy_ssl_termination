@@ -45,7 +45,7 @@ frontend http_front
      bind *:80
      bind *:443 ssl crt /etc/haproxy/certs/www.marianb.tech.pem
      redirect scheme https code 301 if !{ ssl_fc }
-     default_backend http_back
+     default_backend webservers
 
 
 backend webservers
