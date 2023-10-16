@@ -3,6 +3,7 @@
 # Except 22 (SSH), 443 (HTTPS SSL), 80 (HTTP)
 
 sudo apt-get install ufw -y
+sudo sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow 20/tcp
