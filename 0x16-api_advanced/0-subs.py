@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-queries the Reddit API 
+queries the Reddit API
 contains the number_of_subscribers function
 """
 
